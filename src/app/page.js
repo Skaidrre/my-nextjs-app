@@ -3,8 +3,22 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div>
-    Home page
+  <><section class="hero">
+      <h1>Sveiki! Aš esu specialioji pedagogė Karolina</h1>
+      <p> Padedu vaikams su specialiaisiais ugdymosi poreikiais pasiekti savo potencialą. Kartu siekiame stiprinti jų gebėjimus, tobulėti ir sėkmingai integruotis į mokymosi procesą.</p>
+    </section>
+    <section class="paveiksliukas">
+    <div class="tekst">
+    <p>Individualios specialiojo ugdymo konsultacijos</p>
+    <p>Kalbos ir komunikacijos gebėjimų lavinimas</p>
+    <p>Mokymosi įgūdžių stiprinimas</p>
+    <p>Sensorinės integracijos terapija</p>
+    <p>Individualūs užsiėmimai</p>
     </div>
-  );
+    <img class="pic" src="https://i.ibb.co/7GZQnDC/452566515-8791629230852701-3687491088092244196-n.jpg"/>
+    </section>
+    </>
+)
 }
+
+

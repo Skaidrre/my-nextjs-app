@@ -35,10 +35,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -49,11 +45,100 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  border-bottom: 1px solid black;
+  padding: 1.5rem;
+  background-color: rgb(249, 160, 8);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header nav {
   display: flex;
   gap: 2rem;
+}
+
+nav a {
+  transition: background-color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+  .hero {
+    background: url("https://i.ibb.co/1Rc0JVQ/257715295-5259751714040488-5127012730843726081-n.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    font-size: 24px;
+    padding-left: 700px;
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.paveiksliukas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pic {
+  width: 890px;
+}
+
+.tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(249, 160, 8);
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+h1 {
+  color: rgb(249, 160, 8);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 15px;
+}
+
+footer img {
+  height: 20px;
+}
+
+.apie {
+  background: url("https://i.ibb.co/7nbvF9S/207485040-4788879777794353-2171201344808936400-n.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: rgb(249, 160, 8);
+}
+
+  .aprasymas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
 }
