@@ -21,6 +21,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <header class="header">
+        <h2>KŽ</h2>
+        <nav>
+          <a href="/Apiemane">Apie mane</a>
+          <a href="/Paslaugos">Paslaugos</a>
+          <a href="/Kontaktai">Kontaktai</a>
+          <a href="/Kainos">Kainos</a>
+          <a href="/Laikorezervacija">Laiko rezervacija</a>
+        </nav>
+        <div>Burgeris</div>
+      </header>
         {children}
       </body>
     </html>
