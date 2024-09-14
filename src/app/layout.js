@@ -23,16 +23,21 @@ export default function RootLayout({ children }) {
       <title>KŽ pedagogė</title>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       <header class="header">
+        <div class="logo">
+        <a href="/"><img src="https://i.ibb.co/7SyPNTN/marguerite.png" alt="logo" /></a>
         <a href="/"><h2>KŽ</h2></a>
-        <nav>
-          <a href="/">Pagrindinis</a>
-          <a href="/Apiemane">Apie mane</a>
-          <a href="/Paslaugos">Paslaugos</a>
-          <a href="/Kontaktai">Kontaktai</a>
-          <a href="/Kainos">Kainos</a>
-          <a href="/Laikorezervacija">Laiko rezervacija</a>
+        </div>
+        <nav class="navbar">
+        <ul class="navlinks">
+          <li><a href="/">Pagrindinis</a></li>
+          <li><a href="/Apiemane">Apie mane</a></li>
+          <li><a href="/Paslaugos">Paslaugos</a></li>
+          <li><a href="/Kainos">Kainos</a></li>
+          <li><a href="/Kontaktai">Kontaktai</a></li>
+          <li><a href="/Laikorezervacija">Laiko rezervacija</a></li>
+        </ul>
         </nav>
-        <div class="menu-toggle" id="menuToggle">
+        <div class="hamburger">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -41,7 +46,7 @@ export default function RootLayout({ children }) {
       {children}
       <footer class="footer">
             <p>@ 2024 Karolina Žemčūžnikovienė</p>
-            <a href="/"><img src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png" alt="logo" /></a>
+            <a href="/"><img src="https://i.ibb.co/7SyPNTN/marguerite.png" alt="instalogo" /></a>
         </footer>
       </body>
       
@@ -49,6 +54,7 @@ export default function RootLayout({ children }) {
   );
   
 }
+
 
 
 

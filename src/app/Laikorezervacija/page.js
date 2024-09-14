@@ -1,3 +1,3 @@
 export default function Laikorezervacija() {
-    return <div>Labas</div>;
+    return <div class="ruosiama">Puslapis ruošiamas</div>;
 }

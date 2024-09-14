@@ -49,15 +49,25 @@ a {
   background-color: rgb(249, 160, 8);
   font-size: 20px;
   font-weight: bold;
+  padding-right: 200px;
 }
 
-header nav {
+.header img {
+  height: 30px;
+}
+
+.logo {
   display: flex;
-  gap: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
 }
 
 nav a {
-  transition: background-color 0.3s;
+  transition: background-color 1s;
     padding: 10px 15px;
     border-radius: 5px;
 }
@@ -66,22 +76,53 @@ nav a:hover {
   background-color: white;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-out;
+  background-color: white;
+}
+
   .hero {
     background: url("https://i.ibb.co/1Rc0JVQ/257715295-5259751714040488-5127012730843726081-n.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
-    color: black;
     font-size: 24px;
     padding-left: 700px;
     height: 790px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
     gap: 20px;
     font-size: 30px;
+}
+
+
+#susipazinkime {
+  background-color: rgb(249, 160, 8); 
+  padding: 20px; 
+  border-radius: 5px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#susipazinkime:active {
+  transform: scale(0.8); 
 }
 
 .paveiksliukas {
@@ -100,15 +141,140 @@ nav a:hover {
   justify-content:space-around;
   align-items: center;
   padding: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: rgb(249, 160, 8);
   font-size: 30px;
   text-align: center;
-  color: black;
   font-weight: bold;
+}
+
+.tekst img{
+  height: 30px;
+  margin-right: 10px;
 }
 
 h1 {
   color: rgb(249, 160, 8);
+}
+
+.placiau {
+  background-color: white; 
+  padding: 20px; 
+  border-radius: 5px;
+  width: 200px;
+  font-size: 25px;
+}
+
+.placiau:active {
+  transform: scale(0.8); 
+}
+
+.apie {
+  background: url("https://i.ibb.co/7nbvF9S/207485040-4788879777794353-2171201344808936400-n.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+    position: relative;
+    z-index: -1;
+}
+
+  .aprasymas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+.aprasymas2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+gap: 10px;
+padding: 10px;
+text-align: center;
+position: absolute;
+z-index: 2;
+background-color: white;
+top: 75%;
+}
+
+
+.paslaugos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tekst2 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-size: 20px;
+  text-align: center;
+  gap: 10px;
+  border-bottom: 1px solid black;
+}
+
+.kainos{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  height: 300px;
+  padding: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: rgb(249, 160, 8);
+  } 
+  50% {
+    background-color: rgb(253, 207, 128);
+  } 
+  100% {
+    background-color: rgb(249, 160, 8);
+  } 
+}
+.susisiekti {
+  background-color: rgb(249, 160, 8); 
+  padding: 20px; 
+  border-radius: 5px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  animation: colorChange 2s infinite;
+  border-bottom: 1px solid black;
+}
+
+.susisiekti:active {
+  transform: scale(0.8); 
+}
+
+.ruosiama {
+  border-bottom: 1px solid black;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
 }
 
 footer{
@@ -124,21 +290,165 @@ footer img {
   height: 20px;
 }
 
-.apie {
-  background: url("https://i.ibb.co/7nbvF9S/207485040-4788879777794353-2171201344808936400-n.jpg");
+
+
+@media(max-width:1024px){
+  .header {
+    padding-right: 0px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  .pic {
+    width: 380px;
+  }
+
+  .tekst {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+    
+  }
+}
+
+
+
+
+@media(max-width:768px){
+  .hamburger {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .navbar {
+    display: none;
+  }
+  
+  .navlinks {
+    padding-right: 50px;
+    position:fixed;
+    Left: -100%;
+    top: 70px;
+    gap:0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navlinks.active {
+    left: 0;
+  }
+
+ 
+  .hero {
     background-position: left;
     background-repeat: no-repeat;
+    background-size: 50%;
+    padding-left: 400px;
+    height: 470px;
+    gap: 20px;
+    font-size: 20px;
+}
+  .pic {
+    width: 380px;
+  }
+
+  .tekst {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+    font-size: 20px;
+  }
+
+  .apie {
+    background: url("https://i.ibb.co/7nbvF9S/207485040-4788879777794353-2171201344808936400-n.jpg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size:auto;
+      height: 200px;
+      color: black;
+      position: relative;
+      z-index: -1;
+  }
+
+.aprasymas2 {
+top: 30%;
+}
+
+.apie {
+    background-size: contain;
+    height: 1000px;
+}
+
+.paslaugos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pic2 {
+ height: 450px;
+ width: 400px;
+ margin-left: 150px;
+ margin-top: 50px;
+}
+
+}
+
+@media(max-width:360px){
+  .pic {
+    width: 380px;
+  }
+
+  .hero {
+    background-position: top;
+    background-size: 40%;
+    padding-left: 0px;
+    padding-top: 170px;
+    gap: 20px;
+    font-size: 20px;
+    height: 520px;
+}
+
+.pic {
+  display:none;
+}
+
+.tekst {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.apie {
+    background-position: center;
     background-size: cover;
-    height: 600px;
-    color: rgb(249, 160, 8);
+    height: 1000px;
 }
 
   .aprasymas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  text-align: center;
+  font-size: 10px;
 }
+
+.aprasymas2 {
+top: 75%;
+font-size: 10px;
+}
+
+.paslaugos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.pic2 {
+ height: 350px;
+ width: 300px;
+ margin: 15px;
+}
+}
+
