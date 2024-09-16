@@ -37,6 +37,13 @@ export default function RootLayout({ children }) {
           <li><a href="/Kontaktai">Kontaktai</a></li>
         </ul>
         </nav>
+        <nav class="navbar2">
+        <ul class="navlinks">
+          <li><a href="/">Pagrindinis</a></li>
+          <li><a href="/Kainos">Kainos</a></li>
+          <li><a href="/Kontaktai">Kontaktai</a></li>
+        </ul>
+        </nav>
         <div class="hamburger">
             <div class="bar"></div>
             <div class="bar"></div>

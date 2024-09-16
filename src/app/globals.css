@@ -80,6 +80,10 @@ nav a:hover {
   display: none;
 }
 
+.navbar2 {
+  display: none;
+}
+
 .bar {
   display: block;
   width: 25px;
@@ -316,32 +320,37 @@ footer img {
 
 
 @media(max-width:768px){
-  .hamburger {
+  /* .hamburger {
     display: block;
     padding-right: 30px;
-  }
+  } */
 
   .navbar {
     display: none;
   }
+
+  .navbar2 {
+    display: block;
+  }
+
   
-  .navlinks {
-    padding-right: 50px;
-    position:fixed;
-    Left: -100%;
-    top: 70px;
-    gap:0;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0px;
+}
 
-  .navlinks.active {
-    left: 0;
-  }
+nav a {
+  transition: background-color 1s;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+  
+  .header {
+    font-size: 15px;
+    font-weight: bold;
 
+  }
  
   .hero {
     background-position: left;
