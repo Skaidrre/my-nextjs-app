@@ -35,7 +35,6 @@ export default function RootLayout({ children }) {
           <li><a href="/Paslaugos">Paslaugos</a></li>
           <li><a href="/Kainos">Kainos</a></li>
           <li><a href="/Kontaktai">Kontaktai</a></li>
-          <li><a href="/Laikorezervacija">Laiko rezervacija</a></li>
         </ul>
         </nav>
         <div class="hamburger">
