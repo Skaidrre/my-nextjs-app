@@ -284,6 +284,7 @@ footer{
   justify-content: space-between;
   padding: 20px;
   font-size: 15px;
+  background-color: white;
 }
 
 footer img {
